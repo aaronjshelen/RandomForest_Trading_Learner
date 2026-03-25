@@ -1,4 +1,4 @@
-# Random Forest Strategy Learner
+# Random Forest Trading Strategy Learner
 
 An algorithmic trading system built on a Random Forest classifier. Uses technical indicators computed from historical OHLCV data to generate Buy/Hold/Sell signals, allocates capital via a risk parity optimizer with volatility targeting, and validates results through walk-forward cross-validation and Monte Carlo simulation.
 
