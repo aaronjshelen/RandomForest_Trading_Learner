@@ -1,0 +1,82 @@
+============================================================
+  RF Strategy Learner
+============================================================
+  Tickers   : ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'META']
+  Period    : 2015-01-01 → 2024-12-31
+  Optimizer : risk_parity
+============================================================
+
+Step 1/6: Building feature/label dataset...
+Loading data for 5 tickers...
+  Dataset shape: 12250 rows × 21 features
+
+  Label distribution:
+       count   pct
+label
+-1      3171  25.9
+ 0      4284  35.0
+ 1      4795  39.1
+
+Step 2/6: Running walk-forward RF model...
+  Total signal rows generated: 9450
+
+Step 3/6: Computing portfolio weights...
+Loading data for 5 tickers...
+  Weight matrix: 1890 dates × 5 tickers
+
+Step 4/6: Running backtest...
+  Fetching benchmark (SPY)...
+Loading data for 1 tickers...
+  Regime filter: OFF
+
+Step 5/6: Computing performance metrics...
+
+==================================================
+  Performance Summary
+==================================================
+               Strategy Benchmark
+Total Return     264.2%    177.7%
+CAGR              18.8%     14.6%
+Sharpe Ratio       0.86      0.58
+Max Drawdown     -26.5%    -33.7%
+Calmar Ratio       0.71      0.43
+Win Rate          54.1%     55.5%
+Avg Daily Cost  0.0120%       N/A
+==================================================
+
+Step 6/6: Saving plots...
+
+
+
+------------------------------------------------------------
+
+
+
+============================================================
+  Monte Carlo — RF Strategy Learner
+============================================================
+  Simulations : 1,000
+  Capital     : $100,000
+============================================================
+
+Running pipeline to generate strategy returns...
+Loading data for 5 tickers...
+Loading data for 5 tickers...
+
+Running 1,000 Monte Carlo simulations...
+
+==========================================================
+  Monte Carlo Summary  (1,000 simulations)
+==========================================================
+Metric               Actual       5th%     Median      95th%
+----------------------------------------------------------
+CAGR                  18.8%       7.2%      18.5%      31.8%
+Sharpe                 0.86       0.23       0.85       1.48
+Max Drawdown         -26.5%     -35.7%     -22.2%     -15.1%
+Final Value        $364,209   $170,323   $358,366   $797,610
+----------------------------------------------------------
+  Paths beating actual CAGR : 48.5% of simulations
+  Paths with worse drawdown : 26.6% of simulations
+==========================================================
+
+Saving plots...
