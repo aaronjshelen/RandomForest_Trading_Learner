@@ -1,6 +1,6 @@
 # Random Forest Strategy Learner
 
-A production-quality algorithmic trading system built on a Random Forest classifier. Uses technical indicators computed from historical OHLCV data to generate Buy/Hold/Sell signals, allocates capital via a risk parity optimizer with volatility targeting, and validates results through walk-forward cross-validation and Monte Carlo simulation.
+An algorithmic trading system built on a Random Forest classifier. Uses technical indicators computed from historical OHLCV data to generate Buy/Hold/Sell signals, allocates capital via a risk parity optimizer with volatility targeting, and validates results through walk-forward cross-validation and Monte Carlo simulation.
 
 Built as an evolution of the Georgia Tech ML4T course project — replacing the scratch implementation with a full, rigorous pipeline using real ML libraries, multi-stock data, and institutional-grade risk management.
 
